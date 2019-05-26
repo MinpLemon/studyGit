@@ -170,6 +170,11 @@ git stash pop stash@{1} 获取stash为1的文件
 git push
 ```
 
+## git remote -v 
+```
+git remote -v
+```
+
 ## 技巧
 1. 当出现不明确的提示，可以使用 git status 查看当前状态或提示
 2. 修改工作区用checkout 修改暂存区用reset
