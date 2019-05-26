@@ -10,4 +10,3 @@
 * [玩转Git三剑客](https://time.geekbang.org/course/intro/145)
 * [CSDN](https://so.csdn.net/so/search/s.do?q=git&t=blog&u=xiaochendefendoushi) 
 * [简书](https://www.jianshu.com/search?q=git&page=1&type=note)
-* test
