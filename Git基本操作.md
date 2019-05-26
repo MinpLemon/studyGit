@@ -165,6 +165,10 @@ git stash pop stash@{1} 获取stash为1的文件
 >apply 和pop的不同，使用pop会删除 该stash ，apply 会一致保存stash状态
 >使用场景，在开发中零时加塞紧急任务
 
+## git push 把本地的文件上传到git仓库
+```
+git push
+```
 
 ## 技巧
 1. 当出现不明确的提示，可以使用 git status 查看当前状态或提示
