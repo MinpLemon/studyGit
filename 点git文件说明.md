@@ -19,3 +19,10 @@
 * git cat-file -t 命令 ， 查看 git 对象的类型
 * git cat-file -p 命令， 查看 git 对象的内容
 * git cat-file -s 命令， 查看 git 对象的大小
+* git diff commfire1 commfire2
+
+## HEAD的使用
+1. 一个节点，可以包含多个子节点（checkout 出多个分支）
+2. 一个节点可以有多个父节点（多个分支合并）
+3. ^是~都是父节点，区别是跟随数字时候，^2 是第二个父节点，而~2是父节点的父节点
+4. ^和~可以组合使用,例如 HEAD~2^2
