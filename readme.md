@@ -101,6 +101,7 @@ git help --web log                  跳转到git log 的帮助文档网页
 git branch -v                               查看git上有多少分支
 git checkout -b temp eb71b6241cbfcca0       从'eb71b6241cbfcca0'节点开始创建分支 temp
                                                 eb71b6241cbfcca0 通过git log 获取到 入上面 ###git log 实例
+
 ```
 
 ## git 删除分支
@@ -164,6 +165,17 @@ git stash pop stash@{1} 获取stash为1的文件
 ```
 >apply 和pop的不同，使用pop会删除 该stash ，apply 会一致保存stash状态
 >使用场景，在开发中零时加塞紧急任务
+
+## 同步github操作步骤
+```
+git clone git@github.com:minplemon/explore-python.git
+或者 git init explore-python
+cd explore-python
+git remote add mypython git@github.com:minplemon/explore-python.git 链接本地和远端，并取名mypython
+git fetch mypthon master myproject       拉取远端节点  master myproject
+git branch -av                  查看本地节点和远程节点
+git checkout -b myproject mypython/myproject  同步远端节点mypython/myproject并生成本地节点myproject
+```
 
 ## git push 把本地的文件上传到git仓库
 ```
