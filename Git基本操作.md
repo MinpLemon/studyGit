@@ -113,7 +113,7 @@ git branch -d branch_name:使用-d 在删除前Git会判断在该分支上开发
 ```
 git commit --amend              修改最近一次的message（修改新的message）
 git rebase -i 父commit   r       修改任意一个message  (修改旧的message)
-git rebase -i 父commit   s       合并联系的commit
+git rebase -i 父commit   s       合并任意的commit
 git rebase --abort               回滚，取消修改
 ```
 >rebase通常用在还没有提交到集成分支之前
