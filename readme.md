@@ -138,6 +138,7 @@ git reset HEAD <file>   恢复指定文件
 git checkout -- <file>
 ```
 
+
 ## 清除最近的commit提交
 ```
 git reset --hard   commitHash     (头指针指定到commitHash位置)
