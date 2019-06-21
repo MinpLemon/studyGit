@@ -193,11 +193,13 @@ git remote -v
 
 ## git 从远程仓库获取所有分支
 >git clone只能clone远程库的master分支，无法clone所有分支，解决办法如下
+```
 git branch -a   列出所有分支名称如下：
     remotes/origin/dev
     remotes/origin/release
 git checkout -b dev origin/dev  作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 git checkout dev                切换回dev分支，并开始开发
+```
 
 ## 内容整理目的
 1. 高效快速学习git为目的
@@ -215,7 +217,7 @@ git checkout dev                切换回dev分支，并开始开发
 
 
 ## 参考资料(推荐浏览)
-[代码托管](http://wiki.jikexueyuan.com/list/code/)
-[Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
-[GitHub 使用手册 - 基础篇](http://wiki.jikexueyuan.com/project/github-basics/)
-[像 geek 一样写博客](http://wiki.jikexueyuan.com/project/github-page/)
+* [代码托管](http://wiki.jikexueyuan.com/list/code/)
+* [Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+* [GitHub 使用手册 - 基础篇](http://wiki.jikexueyuan.com/project/github-basics/)
+* [像 geek 一样写博客](http://wiki.jikexueyuan.com/project/github-page/)
