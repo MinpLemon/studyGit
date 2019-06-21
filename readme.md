@@ -201,6 +201,11 @@ git branch -a   列出所有分支名称如下：
 git checkout -b dev origin/dev  作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 git checkout dev                切换回dev分支，并开始开发
 ```
+## *实际使用的时候注意*
+```
+git fetch
+git merge
+```
 
 ## 内容整理目的
 1. 高效快速学习git为目的
