@@ -96,7 +96,7 @@ git help --web log                  跳转到git log 的帮助文档网页
 
 ```
 
-## git branch分支 
+## git branch分支
 ```markdown
 git branch -v                               查看git上有多少分支
 git checkout -b temp eb71b6241cbfcca0       从'eb71b6241cbfcca0'节点开始创建分支 temp
@@ -106,8 +106,8 @@ git checkout -b temp eb71b6241cbfcca0       从'eb71b6241cbfcca0'节点开始创
 
 ## git 删除分支
 ```
-git branch -D branch_name  
-git branch -d branch_name:使用-d 在删除前Git会判断在该分支上开发的功能是否被merge的其它  分支。如果没有，不能删除。如果merge到其它分支，但之后又在其上做了开发，使用-d还是不能删除。-D会强制删除。老师能加一讲课来讲讲merge和rebase的区别吗        
+git branch -D branch_name
+git branch -d branch_name:使用-d 在删除前Git会判断在该分支上开发的功能是否被merge的其它  分支。如果没有，不能删除。如果merge到其它分支，但之后又在其上做了开发，使用-d还是不能删除。-D会强制删除。老师能加一讲课来讲讲merge和rebase的区别吗
 ```
 
 ## 整理commit，修改commit的message 或合并commit
@@ -135,7 +135,7 @@ git reset HEAD <file>   恢复指定文件
 
 ## 工作区文件恢复为和暂存区一样
 ```
-git checkout -- <file>  
+git checkout -- <file>
 ```
 
 ## 清除最近的commit提交
@@ -144,13 +144,13 @@ git reset --hard   commitHash     (头指针指定到commitHash位置)
 ```
 >操作后，暂存区和工作区恢复到指定的位置
 >>使用场景1. 删除commit提交
->>使用场景2. 比如做了git rm file 还没commit，使用reset命令可恢复所删除的内容 
+>>使用场景2. 比如做了git rm file 还没commit，使用reset命令可恢复所删除的内容
 
 ## 查看不同提交指定文件的差异
 ```
-git diff temp master                   比较所有文件差异
-git diff temp master -- index.html    比较指定文件差异
-git diff 88f0f5a dcaa74b              用commitHash方式
+git diff temp master                    比较所有文件差异
+git diff temp master -- index.html      比较指定文件差异
+git diff 88f0f5a dcaa74b                用commitHash方式
 git diff 88f0f5a dcaa74b -- index.html
 ```
 
@@ -172,8 +172,8 @@ git clone git@github.com:minplemon/explore-python.git
 或者 git init explore-python
 cd explore-python
 git remote add mypython git@github.com:minplemon/explore-python.git 链接本地和远端，并取名mypython
-git fetch mypthon master myproject       拉取远端节点  master myproject
-git branch -av                  查看本地节点和远程节点
+git fetch mypthon master myproject        拉取远端节点  master myproject
+git branch -av                            查看本地节点和远程节点
 git checkout -b myproject mypython/myproject  同步远端节点mypython/myproject并生成本地节点myproject
 ```
 
@@ -182,7 +182,7 @@ git checkout -b myproject mypython/myproject  同步远端节点mypython/myproje
 git push
 ```
 
-## git remote -v 
+## git remote -v
 ```
 git remote -v
 ```
@@ -191,6 +191,13 @@ git remote -v
 1. 当出现不明确的提示，可以使用 git status 查看当前状态或提示
 2. 修改工作区用checkout 修改暂存区用reset
 
+## git 从远程仓库获取所有分支
+>git clone只能clone远程库的master分支，无法clone所有分支，解决办法如下
+git branch -a   列出所有分支名称如下：
+    remotes/origin/dev
+    remotes/origin/release
+git checkout -b dev origin/dev  作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
+git checkout dev                切换回dev分支，并开始开发
 
 ## 内容整理目的
 1. 高效快速学习git为目的
@@ -200,7 +207,15 @@ git remote -v
 5. 文档安装学习进度更新
 
 ## 本内容来自：
-* [极客时间](https://time.geekbang.org/)  
+* [极客时间](https://time.geekbang.org/)
 * [玩转Git三剑客](https://time.geekbang.org/course/intro/145)
 * [CSDN](https://so.csdn.net/so/search/s.do?q=git&t=blog&u=xiaochendefendoushi)* [简书](https://www.jianshu.com/search?q=git&page=1&type=note)
 
+
+
+
+## 参考资料(推荐浏览)
+[代码托管](http://wiki.jikexueyuan.com/list/code/)
+[Git教程](https://www.liaoxuefeng.com/wiki/896043488029600)
+[GitHub 使用手册 - 基础篇](http://wiki.jikexueyuan.com/project/github-basics/)
+[像 geek 一样写博客](http://wiki.jikexueyuan.com/project/github-page/)
