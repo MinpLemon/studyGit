@@ -16,6 +16,7 @@ git config [--local | --global | --system] user.email 'Your email'
 ```
 >用于判断提交的代码指定到具体人
 
+
 ## 查看git配置
 ```
 git config --list
@@ -100,8 +101,8 @@ git help --web log                  跳转到git log 的帮助文档网页
 ```markdown
 git branch -v                               查看git上有多少分支
 git checkout -b temp eb71b6241cbfcca0       从'eb71b6241cbfcca0'节点开始创建分支 temp
-                                                eb71b6241cbfcca0 通过git log 获取到 入上面 ###git log 实例
-
+                                            eb71b6241cbfcca0 通过git log 获取到 入上面 ###git log 实例
+git push --set-upstream origin temp(分支名)  推送本地分支到远程仓库
 ```
 
 ## git 删除分支
@@ -112,7 +113,7 @@ git branch -d branch_name:使用-d 在删除前Git会判断在该分支上开发
 
 ## 整理commit，修改commit的message 或合并commit
 ```
-git commit --amend              修改最近一次的message（修改新的message）
+git commit --amend               修改最近一次的message（修改新的message）
 git rebase -i 父commit   r       修改任意一个message  (修改旧的message)
 git rebase -i 父commit   s       合并任意的commit
 git rebase --abort               回滚，取消修改
