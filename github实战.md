@@ -5,7 +5,7 @@
 ```
 $ ls -al ~/.ssh
 ```
-    
+
 ### 创建一套新公私钥
 ```
 $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -20,7 +20,7 @@ $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 git remote -v                查看远程版本库信息
 git remote add githubname git@github.com:minplemon/studyPython.git   新增一个远端站点 githubname 表示设置远端站点名称
-git fetch githubname master  指定拉去拉取githubname远程版本master分枝 
+git fetch githubname master  指定拉去拉取githubname远程版本master分枝
 git merge githubname/master  把githubname仓库的master合并
 git merge -h                查看合并帮助信息
 git merge --allow-unrelated-histories githup/master 合并githup上的master分支（两分支不是父子关系，所以合并需要添加 --allow-unrelated-histories
@@ -52,7 +52,11 @@ git pull 一次搞定，比较稳健的操作是先branch -av 看状态 有不�
 ```
 7. 多人都修改了了同一个文件名
 pull 之后 所有文件都会存在，需要一个单独处理
-8. 
+8. GitHub 同步实践
+```
+1. git merge master 本地同步 master
+2. 通过github desktop 把本地 同步到 github网站
+```
 
 ## 好的习惯
 1. 在用git前先坐下git pull 本地和远端数据同步 pull = fetch + merge
@@ -61,6 +65,3 @@ pull 之后 所有文件都会存在，需要一个单独处理
 4. 本地比远端早几个commit 用push
 5. git branch -av 中的 ahead 和behind，ahead是本地仓库比远端仓库多commit，behind是本地仓库比远端仓库少commit
 6. 查看本地和远端的状态，git branch -av
-
-
-
